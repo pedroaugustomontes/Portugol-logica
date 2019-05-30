@@ -1,0 +1,39 @@
+algoritmo "operadores relacionais"
+//seção de declarações
+    var n1, n2: inteiro
+    var nome: caractere
+    var R: logico
+inicio
+//seção de comandos
+   escreval("ola pessoar, esse    codigu vai cê pra estuda os operadores relacionais, escreva um número sô: ")
+   leia(n1)
+   escreval("tamo junto meu cumpadi, escreve outro número aí: ")
+    leia(n2)
+R <- n1 > n2
+    escreval("tendeu meu cumpadi, o resultado de ", n1," maior que ", n2," é ", R)
+    escreval("mais uma vez...")
+    leia(n1)
+    leia(n2)
+R <- n1 < n2
+    escreval("agora vamos ver se ", n1," é menor que ", n2,": ", R)
+    escreval("de novo...")
+    leia(n1)
+    leia(n2)
+R <- n1 >= n2
+    escreval("dessa vez veremos se ", n1," é maior ou igual a ", n2,": ", R)
+    escreval("again...")
+    leia(n1)
+    leia(n2)
+R <- n1 <= n2
+    escreval("this time veremos se ", n1," é menor ou igual a ", n2,": ", R)
+    escreval("again and again...")
+    leia(n1)
+    leia(n2)
+R <- n1 = n2
+    escreval("ta quase acabando, but now we will see if ", n1," is equal of ", n2,": ", R)
+    escreval("vamos lá...")
+    leia(n1)
+    leia(n2)
+R <- n1 <> n2
+    escreval("a última vez, vejamos se ", n1," é diferente de ", n2,": ", R)
+fimalgoritmo

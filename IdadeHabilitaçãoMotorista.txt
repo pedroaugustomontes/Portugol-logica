@@ -1,0 +1,34 @@
+algoritmo "AptidaoParaCNH"
+// Função :  calcular se a pessoa ja tem a idade necesssaria para dar entrada a habilitação de motorista
+// Autor :  mrpmontes
+// Data : 02/10/2019
+// Seção de Declarações 
+var
+    A, N, Idade: Inteiro
+inicio
+// Seção de Comandos
+// O calculo da idade é ano de nasc - ano atual
+   EscrevaL("---------------------------")
+   EscrevaL("DEPARTAMENTO DE TRANSITO")
+   EscrevaL("---------------------------")
+   Escreva("  Ano atual (yyyy): ")
+   Leia(A)
+   Escreva("  Ano de nascimento (yyyy): ")
+   Leia(N)
+   EscrevaL ("")
+   Idade <- A - N
+   //Aqui pegamos os dados da variavel Idade e se for maior ou igual a 18 a pessoa é apta a tirar a habilitação de motorista
+   Se ( Idade >= 18) entao
+      EscrevaL("------- STATUS -------")
+      EscrevaL("  IDADE: ", Idade," ANOS")
+      EscrevaL("  APTO A TIRAR A CARTEIRA DE MOTORISTA")
+      EscrevaL("----------------------")
+   SeNao
+      EscrevaL("------- STATUS -------")
+      EscrevaL("  IDADE: ", Idade," ANOS")
+      EscrevaL("  INAPTO A TIRAR A CARTEIRA DE MOTORISTA")
+      EscrevaL("----------------------")
+   FimSe
+
+fimalgoritmo
+

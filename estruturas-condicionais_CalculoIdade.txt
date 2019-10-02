@@ -1,0 +1,19 @@
+algoritmo "Estruturas_Condicionais_CalculoIdade"
+// Função : calcular a idade
+// Autor : mrpmontes
+// Data : 01/10/2019
+// Seção de Declarações 
+var
+   ano, nasc, idade: Inteiro
+inicio
+// Seção de Comandos 
+   Escreva("Em que ano estamos? ")
+   Leia(ano)
+   Escreva("Em que ano você nasceu? ")
+   Leia(nasc)
+   idade <- ano - nasc
+   Escreva("Em ", ano, " voce tera ", idade, " anos")
+               Se  (idade >= 21) entao
+               Escreval (" e ja tera atingido a maior idade")
+               FimSe
+fimalgoritmo

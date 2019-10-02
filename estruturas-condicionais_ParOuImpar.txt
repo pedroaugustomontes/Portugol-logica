@@ -1,0 +1,20 @@
+algoritmo "ParOuImpar"
+// Função :  Calcular se numero é par ou impar
+// Autor :  mrpmontes
+// Data : 01/10/2019
+// Seção de Declarações 
+var
+  N : Inteiro
+inicio
+// Seção de Comandos
+   Escreva("Digite um número: ")
+   Leia(N)
+   //se o resto da divisão de N por 2 for igual a 0 é um número par,
+   //se não é um número impar
+   Se  (N % 2 = 0) entao
+        Escreval(N, " é um número par")
+   SeNao
+        Escreval(N, " é um número impar")
+   FimSe
+
+fimalgoritmo

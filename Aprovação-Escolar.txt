@@ -1,0 +1,29 @@
+algoritmo "Aprovação_Escolar"
+// Função : calculo da média escolar do aluno e resultado de aprovação, reprovação ou recuperação.
+// Autor : mrpmontes
+// Data : 04/10/2019
+// Seção de Declarações 
+var
+   N, T, G, M: Real
+inicio
+// Seção de Comandos
+   Escreva("Digite sua nota de Ninjutsu: ")
+   Leia(N)
+   Escreva("Digite sua nota de Taijutsu: ")
+   Leia(T)
+   Escreva("Digite sua nota de Genjutsu: ")
+   Leia(G)
+   M <-(N + T + G) / 3
+   EscrevaL("----------------------")
+   EscrevaL("Sua média é de ", M:2:2)
+   Se ( M >= 6) entao
+      EscrevaL("Ninja APROVADO!")
+   SeNao
+        Se(M >= 4) e (M < 6) entao
+             EscrevaL("Ninja em RECUPERAÇÃO!")
+        SeNao
+             EscrevaL("Ninja REPROVADO!")
+        FimSe
+   FimSe
+   EscrevaL("----------------------")
+fimalgoritmo

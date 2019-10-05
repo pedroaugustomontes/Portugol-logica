@@ -1,0 +1,40 @@
+algoritmo "CalculoIMC-Estr.Cond.Aninhada"
+// Função : Calcular o IMC e declarar qual media do o usuario IMC se enquandra
+// Autor :  MrPMontes
+// Data : 05/10/2019
+// Seção de Declarações 
+var
+   Massa, Altura, IMC: Real
+inicio
+      Escreva("Digite sua massa (kg): ")
+      Leia(Massa)
+      Escreva("Digite sua altura (m): ")
+      Leia(Altura)
+      IMC <- Massa / (Altura ^ 2)
+      EscrevaL("Seu IMC é de ", IMC:5:2)
+      Se (IMC < 17)entao
+         EscrevaL("Você esta muito abaixo do peso!")
+      senao
+           Se (IMC >= 17) e (IMC < 18.5)entao
+              EscrevaL("Você esta abaixo do peso!")
+           senao
+              Se (IMC >= 18.5) e (IMC < 25)entao
+                 EscrevaL("Parabéns, você esta no peso ideal!")
+              senao
+                 Se (IMC >= 25) e (IMC < 30)entao
+                    EscrevaL("Você está acima do peso!")
+                 senao
+                    Se (IMC >= 30) e (IMC < 35)entao
+                       EscrevaL("Você está com obesidade!")
+                    senao
+                       Se (IMC >= 35) e (IMC < 40)entao
+                          EscrevaL("Você esta com obesidade severa!")
+                       senao
+                          EscrevaL("Você esta com obesidade morbida!")
+                       Fimse
+                    Fimse
+                 Fimse
+              Fimse
+           Fimse
+      FimSe
+fimalgoritmo

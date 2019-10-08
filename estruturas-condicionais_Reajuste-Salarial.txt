@@ -1,0 +1,33 @@
+algoritmo "ReajusteSalarial"
+// Função : Calculo  do reajuste salarial de um funcionario com base em seus dependentes
+// Autor : mrpmontes
+// Data : 08/10/2019
+// Seção de Declarações 
+var
+   NOME: Caractere
+   SAL, NovoSAL: Real
+   DEP: Inteiro
+inicio
+// Seção de Comandos
+   EscrevaL ("--------------------------------")
+   EscrevaL ("--- RH DIFICULTANDO SUA VIDA ---")
+   EscrevaL ("--------------------------------")
+   Escreva ("Qual o nome do Funcionário? ")
+   Leia (NOME)
+   Escreva ("Qual o salário do Funcionário? ")
+   Leia (SAL)
+   Escreva ("Qual a quantidade de dependentes do funcionário? ")
+   Leia (DEP)
+        //o novo salário do funcionario vai depender de quantos dependentes ele tem
+        Escolha DEP
+                Caso 0
+                     NOVOSal <- SAL +(SAL*5/100)
+                Caso 1, 2, 3
+                     NOVOSal <- SAL +(SAL*10/100)
+                Caso 4, 5, 6
+                     NOVOSal <- SAL +(SAL*15/100)
+                OutroCaso
+                     NOVOSal <- SAL +(SAL*18/100)
+        FimEscolha
+        Escreva ("O novo salário do Funcionário é de R$", NOVOSal)
+fimalgoritmo

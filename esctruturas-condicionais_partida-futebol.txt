@@ -1,0 +1,27 @@
+algoritmo "partida-de-futebol"
+var
+   mensagen_diferenca_di_gols : Caractere
+   diferenca_di_gols          : inteiro
+   gols_madureira             : inteiro
+   gols_bangu                 : inteiro
+inicio
+   EscrevaL(" BANGU x MADUREIRA ")
+   EscrevaL("-------------------")
+   Escreva("Quantos gols de BANGU? ")
+   Leia(gols_bangu)
+   Escreva("Quantos gols de MADUREIRA? ")
+   Leia(gols_madureira)
+   diferenca_di_gols <- abs(gols_bangu - gols_madureira)
+   EscrevaL("-------------------")
+   EscrevaL("DIFERENCA: ", diferenca_di_gols)
+   Escolha diferenca_di_gols
+           Caso 0
+                mensagen_diferenca_di_gols <- "EMPATE"
+           Caso 1, 2, 3
+                mensagen_diferenca_di_gols <- "NORMAL"
+           OutroCaso
+                mensagen_diferenca_di_gols <- "GOLEADA"
+   FimEscolha
+   EscrevaL("STATUS: ", mensagen_diferenca_di_gols)
+   EscrevaL("-------------------")
+fimalgoritmo

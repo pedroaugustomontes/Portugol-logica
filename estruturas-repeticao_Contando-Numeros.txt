@@ -1,0 +1,16 @@
+algoritmo "ContandoNumeros"
+// Função : Contar de 1 a 10 usando estrutura a de repetição ENQUANTO
+// Autor :  Mrpmontes
+// Data : 14/10/2019
+// Seção de Declarações 
+var
+   contador : Inteiro
+inicio
+// Seção de Comandos 
+   contador <- 0
+   Enquanto  (contador <= 10) faca
+             EscrevaL(contador)
+             contador <- contador + 1
+   FimEnquanto
+   EscrevaL("Terminei de contar!")
+fimalgoritmo

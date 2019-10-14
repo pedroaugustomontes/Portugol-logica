@@ -1,0 +1,38 @@
+algoritmo "Jogo de Futebol"
+// Função : verificar qual time ganhou o jogo e calcular diferença de gols e como foi a partida
+// Autor : MrPMontes
+// Data : 14/10/2019
+// Seção de Declarações 
+var
+   BERL, RERI, DIF: Inteiro
+inicio
+// Seção de Comandos
+   EscrevaL(" BERLANDIA x RERIGUERI ")
+   EscrevaL("-----------------------")
+   Escreva("Quantos gols BERLANDIA marcou? ")
+   Leia(BERL)
+   Escreva("Quantos gols RERIGUERI marcou? ")
+   Leia(RERI)
+   EscrevaL("-----------------------")
+   //Abaixo algoritimo para verificar qual time ganhou o jogo usando estr. cond. aninhada SE
+   Se (BERL = RERI) entao
+      EscrevaL("JOGO EMPATADO!")
+   SeNao
+        Se (BERL > RERI) entao
+           EscrevaL("BERLANDIA É O GANHADOR!")
+        SeNao
+           EscrevaL("RERIGUERI É O GANHADOR!")
+        FimSe
+   FimSe
+   //Abaixo calculamos o valor absoluto da expressao BERL - RERI usando o atributo ABS
+   DIF <- ABS (BERL - RERI)
+   EscrevaL("DIFERENÇA DE GOLS: ", DIF)
+   Escolha DIF
+           Caso 0
+                EscrevaL("FOI EMPATE MINHA GENTE!")
+           Caso 1, 2, 3
+               Escreval("FOI UM JOGO NORMAL!")
+           OutroCaso
+               EscrevaL("FOI UM ATROPELO!")
+   FimEscolha
+fimalgoritmo

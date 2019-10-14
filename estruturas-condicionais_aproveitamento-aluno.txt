@@ -1,37 +1,44 @@
 algoritmo "AproveitamentoAluno"
+// Função : Calcular media das notas e aproveitamento escolar o aluno
+// Autor : MrPMontes
+// Data : 14/10/2019
+// Seção de Declarações
 var
    N1, N2, M: Real
    NOTA: Caractere
 inicio
-      Escreval("------------------")
-      Escreval("COLEGIO OLA MUNDO")
-      Escreval("------------------")
-      Escreval("Digite a primeira nota: ")
+      Escreval("------------------------")
+      Escreval("COLEGIO ZIKA DA QUEBRADA")
+      Escreval("------------------------")
+      Escreval("Digite a primeira nota zika: ")
       Leia(N1)
-      Escreval("Digite a segunda nota: ")
+      Escreval("Digite a segunda nota zika: ")
       Leia(N2)
+      //Abaixo algoritimo para calcular a média das notas
       M <- (N1 + N2) / 2
-      Se(M >=  9) entao
-           NOTA <- "A"
+      //Abaixo estr. cond. aninhada SE para resultar no aproveitamento escolar do aluno
+      Se (M >= 9) entao
+         NOTA <- "A"
       senao
-           Se(M >= 8) e (M < 8.9) entao
-                NOTA <- "B"
+           Se (M >= 8) e (M <= 8.9) entao
+              NOTA <- "B"
            senao
-                Se(M >= 7) e (M < 7.9) entao
-                     NOTA <- "C"
+                Se (M >= 7) e (M <= 7.9) entao
+                   NOTA <- "C"
                 senao
-                     Se(M >= 6) e (M < 6.9) entao
-                          NOTA <- "D"
+                     Se (M >= 6) e (M <= 6.9) entao
+                        NOTA <- "D"
                      senao
-                          Se(M >= 5) e (M < 5.9) entao
-                               NOTA <- "E"
+                          Se (M >= 5) e (M <= 5.9) entao
+                             NOTA <- "E"
                           senao
-                               NOTA <- "F"
+                             NOTA <-  "F"
                           FimSe
                      FimSe
                 FimSe
            FimSe
       FimSe
-      Escreval("Media do Aluno..: ", M)
-      Escreval("Aproveitamento do Aluno..: ", NOTA)
+      Escreval("------------------------")
+      EscrevaL("MEDIA DO ALUNO ZIKA", M)
+      EscrevaL("APROVEITAMENTO DO ALUNO: ", NOTA)
 fimalgoritmo

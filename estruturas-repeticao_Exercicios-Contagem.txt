@@ -1,0 +1,40 @@
+algoritmo "Exercicios-Estr.Repetição"
+// Função : Criar programas de contagem utilizando estrutura de repetição ENQUANTO
+// Autor :  MrPMontes
+// Data : 15/10/2019
+// Seção de Declarações 
+var
+  numero, parouimpar, positivo: Inteiro
+inicio
+// Seção de Comandos
+   EscrevaL("--- EXERCICIO 1 ---")
+   EscrevaL("Crie um programa que apresente os números de 0 a 15.")
+   numero <- 0
+   Enquanto (numero <= 15) faca
+            EscrevaL(numero)
+            numero <- numero + 1
+   FimEnquanto
+   EscrevaL("")
+   EscrevaL("")
+   
+   EscrevaL("--- EXERCICIO 2 FEITO! ---")
+   EscrevaL("Crie um programa que apresente somente os números pares de 0 a 15.")
+   parouimpar <- 0
+   Enquanto (parouimpar <= 15) faca
+            EscrevaL(parouimpar)
+            parouimpar <- parouimpar + 2
+   FimEnquanto
+   EscrevaL("")
+   EscrevaL("")
+
+   EscrevaL("--- EXERCICIO 3 FEITO! ---")
+   EscrevaL("Crie um programa que solicite um valor positivo ao usuario e exiba uma lista regressiva até 0.")
+   EscrevaL("Digite um valor positivo: ")
+   Leia(positivo)
+   Enquanto (positivo >= 0) faca
+            EscrevaL(positivo)
+            positivo <- positivo - 1
+   FimEnquanto
+   EscrevaL("FIM!")
+
+fimalgoritmo

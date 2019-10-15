@@ -1,0 +1,33 @@
+algoritmo "ExerciciosLogica"
+// Autor : MrPMontes
+// Data : 15/10/2019
+// Seção de Declarações 
+var
+   soma, subtracao, multiplicacao: Inteiro
+   area, raiz2, salario: Real
+inicio
+//1. Considerando 2 números inteiros, calcule a soma, a subtração e a multiplicação entre eles.
+//Por fim, mostre os resultados das operações.
+   EscrevaL("--- EXERCICIO 1 ---")
+   soma <- 25 + 41
+   subtracao <- 9 - 7
+   multiplicacao <- 3 * 7
+   EscrevaL("A soma de 25 + 41 é igual a", soma)
+   EscrevaL("A subtração de 9 - 7 é igual a", subtracao)
+   EscrevaL("A multiplicacao de 3 x 7 é igual a", multiplicacao)
+//2. Sabendo que a área de um triângulo é definida como (base*altura)/2, calcule o valor da área e mostre-o.
+//Determine a área do triângulo considerando que a sua base mede 23 cm e a altura 12 cm.
+   EscrevaL("--- EXERCICIO 2 ---")
+   area <- (23 * 12) / 2
+   EscrevaL("A área do triangulo considerando que a base mede 23 cm e altura 12 cm é igual a", area)
+//3. Dado um número inteiro, calcule e mostre sua raiz quadrada.
+   EscrevaL("--- EXERCICIO 3 ---")
+   raiz2 <- RaizQ(10)
+   EscrevaL("A raiz quadrada de 10 é", raiz2)
+//4. Tendo como base o salário de um funcionário, faça um acréscimo de 30% sobre o salário
+// e, por fim, mostre o novo salário.
+   EscrevaL("--- EXERCICIO 4 ---")
+   salario <- 1019 + (1091*30)/100
+   EscrevaL("O salário de R$1091 teve um aumento de 30% e foi para", salario)
+
+fimalgoritmo

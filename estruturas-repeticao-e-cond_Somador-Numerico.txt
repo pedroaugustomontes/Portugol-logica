@@ -1,0 +1,33 @@
+Algoritmo "SomadorNumerico"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Guanabara
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : MrPMontes
+// Data atual  : 31/10/2019
+Var
+// Seção de Declarações das variáveis 
+     cont, N, soma, maior, menor: Inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   cont <- 1
+   soma <- 0
+   Enquanto (cont <= 5) faca
+        Escreva("Digite ", cont, "o. valor: ")
+        Leia (N)
+        //algoritimo para guardar o maior numero digitado
+        Se (N > maior) entao
+           maior <- N
+        FimSe
+        //algoritimo para guardar o menor valor digitado
+        Se (menor = 0) ou (N < menor) entao
+           menor <- N
+        FimSe
+        soma <- soma + N
+        cont <- cont + 1
+   FimEnquanto
+   EscrevaL("A soma de todos os valores foi", soma)
+   EscrevaL("E o maior valor digitado foi", maior)
+   EscrevaL("E o menor valor digitado foi", menor)
+
+Fimalgoritmo

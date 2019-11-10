@@ -1,0 +1,35 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 10/11/2019
+Var
+// Seção de Declarações das variáveis 
+  valorInicial, valorFinal: Inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   EscrevaL("CONTAGEM INTELIGENTE")
+   EscrevaL("--------------------")
+   Escreva("Digite o valor inicial: ")
+   Leia(valorInicial)
+   Escreva("Digite o valor final: ")
+   Leia(valorFinal)
+   EscrevaL("-----------------")
+   EscrevaL(" C O N T A N D O ")
+   EscrevaL("-----------------")
+   Se (valorInicial < valorFinal) entao
+
+      Enquanto (valorInicial <= valorFinal) faca
+      Escreva (valorInicial, "...")
+      valorInicial <- valorInicial + 1
+      FimEnquanto
+   SeNao
+      Enquanto (valorInicial >= valorFinal) faca
+      Escreva(valorInicial, "...")
+      valorInicial <- valorInicial - 1
+      FimEnquanto
+   FimSe
+
+Fimalgoritmo

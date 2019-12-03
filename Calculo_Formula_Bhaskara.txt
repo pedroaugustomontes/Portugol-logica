@@ -1,0 +1,30 @@
+algoritmo "Calculo_Formula_Bhaskara"
+// Função : Calcular forma de bhaskara
+// Autor : mrpmontes
+// Data : 03/12/2019
+// Seção de Declarações 
+var
+
+x1, x2, delta, a, b, c: REAL
+
+inicio
+// Seção de Comandos 
+
+Leia (a, b, c)
+delta  <- b ^ 2 - 4 * a * c
+
+Se delta < 0 entao
+	Escreval("Sem raízes reais")
+Senao
+
+  	EscrevaL (delta)
+
+  	x1 <- (-b + raizQ(delta)) / (2 * a)
+
+  	x2 <- (-b - raizQ(delta)) / (2 * a)
+
+  	EscrevaL(x1)
+  	EscrevaL(x2)
+ Fimse
+
+fimalgoritmo
